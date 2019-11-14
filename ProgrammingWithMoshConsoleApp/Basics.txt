@@ -1,0 +1,21 @@
+﻿Type conversion basics to remember:-
+	-There are times that you need to temporarily convert the value of a variable to a different type. 
+	-Note that this conversion does not impact the original variable since C# is a statically-typed language, which in simple term means: once you declare the type of a variable, you cannot change it.
+	-But you may need to convert the "value" of a variable as part of assigning that value to a variable of a different type. 
+
+Writing Comments in code:
+	-As a rule for clean coding, use comments only to explain whys, not whats. 
+	-Don’t explain what the code is doing. Your code should be clean and self explanatory that doesn’t need a comment. 
+	-But if you had a reason for writing the code that way, or there were constraints at the time you were working on this piece of code, always explain them using comments.
+
+Escape characters in strings:
+	- \n => New Line
+	- \t => Tab
+	- \\ => Backslash
+	- \' => Single Quotation Mark
+	- \" => Double Quotation Mark
+
+There is a lot of difference between Constants and readonly.
+	- You can't declare a local variable as readonly. Only fields can be declared as readonly. Readonly fields can be assigned a value either during declaration or in the constructor
+	- You can't assign a variable value to a Constant, while you can in the case of a readonly field
+

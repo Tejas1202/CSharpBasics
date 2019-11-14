@@ -43,14 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Colors.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="ArraysAndLists\Arrays.cs" />
+    <Compile Include="ArraysAndLists\Exercise.cs" />
+    <Compile Include="ControlFlow\Exercise.cs" />
+    <Compile Include="ControlFlow\Loops.cs" />
+    <Compile Include="NonPrimitiveTypes\Basics.cs" />
+    <Compile Include="NonPrimitiveTypes\Colors.cs" />
+    <Compile Include="ControlFlow\Conditionals.cs" />
+    <Compile Include="DateTimeIntro.cs" />
+    <Compile Include="DebugApplications.cs" />
+    <Compile Include="NonPrimitiveTypes\Enums.cs" />
+    <Compile Include="ExercisesTemp.cs" />
+    <Compile Include="IOUtility.cs" />
+    <Compile Include="ArraysAndLists\ListsBasics.cs" />
+    <Compile Include="PrimitiveTypes\Operators.cs" />
+    <Compile Include="NonPrimitiveTypes\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ControlFlow\RandomClass.cs" />
     <Compile Include="Strings.cs" />
+    <Compile Include="PrimitiveTypes\TypeConversions.cs" />
+    <Compile Include="NonPrimitiveTypes\TypesDifference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Basics.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
