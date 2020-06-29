@@ -2,9 +2,9 @@
 
 namespace ProgrammingWithMoshConsoleApp.NonPrimitiveTypes
 {
-    class TypesDifference
+    public class TypesDifference
     {
-        private static void ReferenceAndValueTypes()
+        public void ReferenceAndValueTypes()
         {
             var a = 10;
             var b = a;

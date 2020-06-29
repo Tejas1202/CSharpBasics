@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ProgrammingWithMoshConsoleApp
+namespace ProgrammingWithMoshConsoleApp.Strings
 {
-    class ExercisesTemp
+    class Exercise
     {
-        #region Working with Texts
-
         public void GetConsecutives()
         {
             Console.WriteLine("Enter few consecutive numbers seperated by hyphen");
@@ -121,7 +119,7 @@ namespace ProgrammingWithMoshConsoleApp
                 }
             }
 
-            return isConsecutive = true;
+            return true;
         }
 
         private bool CheckDuplicates(string[] inputList)
@@ -162,39 +160,5 @@ namespace ProgrammingWithMoshConsoleApp
 
             return isValid;
         }
-
-        #endregion
-
-        #region Working with Files
-
-        public void CountWordsInTextFile(string path)
-        {
-            if (!File.Exists(path))
-                throw new FileNotFoundException("The file is not found", path);
-
-            var text = File.ReadAllText(path);
-            if(text.Contains(' '))
-            {
-                var words = text.Split(' ');
-                Console.WriteLine("The number of words in this file are: " + words.Length);
-
-                var longestWord = words[0];
-                foreach(var word in words)
-                {
-                    if(word.Length > longestWord.Length)
-                    {
-                        longestWord = word;
-                    }
-                }
-
-                Console.WriteLine("Longest word is: " + longestWord);
-            }
-            else
-            {
-                Console.WriteLine("Either the file has only one word or the user has not given any spaces between");
-            }
-        }
-
-        #endregion
     }
 }

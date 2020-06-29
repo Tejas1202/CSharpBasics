@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
-namespace ProgrammingWithMoshConsoleApp
+namespace ProgrammingWithMoshConsoleApp.Strings
 {
     class Strings
     {
@@ -24,7 +24,7 @@ namespace ProgrammingWithMoshConsoleApp
 
             firstName = string.Concat(firstName, path);
             StringBuilder sb = new StringBuilder(firstName);
-            sb = sb.Append(path);
+            sb.Append(path);
 
             string s1 = "Geeks";
             Concat1(s1); // s1 is not changed 
@@ -83,7 +83,7 @@ namespace ProgrammingWithMoshConsoleApp
                         break;
                 }
 
-                return String.Join(" ", summaryWords) + "...";
+                return string.Join(" ", summaryWords) + "...";
             }
         }
 
